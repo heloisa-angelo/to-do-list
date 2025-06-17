@@ -1,0 +1,115 @@
+/* Base reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f3e8ff;
+  color: #5c2a9d;
+}
+
+/* Container */
+.to-do-list {
+  background-color: #e9d8ff;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 480px;
+  margin: 40px auto;
+  box-shadow: 0 2px 6px rgba(92, 42, 157, 0.3);
+}
+
+/* Header */
+.to-do-list h1 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin-bottom: 16px;
+}
+
+/* Input and add button */
+.to-do-list input[type="text"] {
+  width: calc(95% - 120px);
+  padding: 10px;
+  border: 2px solid #b497f6;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #5c2a9d;
+  background-color: #f6f0ff;
+  transition: border-color 0.2s ease;
+}
+
+.to-do-list input[type="text"]:focus {
+  border-color: #7c4dff;
+  outline: none;
+  background-color: #f3e8ff;
+}
+
+.to-do-list .add-button {
+  background-color: #7c4dff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px;
+  margin-left: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  font-size: 1.2rem;
+}
+
+.to-do-list .add-button:hover {
+  background-color: #5929b0;
+}
+
+/* Task list */
+.to-do-list ol {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0;
+}
+
+/* Task item */
+.to-do-list li {
+  background-color: #d6bcfa;
+  border-radius: 10px;
+  padding: 10px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1rem;
+  color: #3c1361;
+  margin-bottom: 10px;
+}
+
+/* Task text */
+.to-do-list li .text {
+  flex-grow: 1;
+  margin-right: 12px;
+  word-break: break-word;
+}
+
+/* Task buttons */
+.to-do-list .delete-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #5c2a9d;
+  font-size: 18px;
+  padding: 4px 6px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.to-do-list .delete-button:hover {
+  background-color: #b497f6;
+  color: white;
+}
+
